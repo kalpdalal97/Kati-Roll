@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bombay Bar Soft Opening RSVP</title>
+<meta name="description" content="RSVP for the Bombay Bar x Kati Roll soft opening, Sunday Oct 11, 12 Easton Ave, New Brunswick. Buy 1 Get 1 Free on Kati Rolls all day.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#120b08; --card:#1d1310; --line:#3a2a22;
+    --cream:#fff6e4; --yellow:#ffd21f; --red:#d4142a; --scarlet:#cc0033;
+    --muted:#c9b8a6;
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0}
+  body{
+    background:
+      radial-gradient(900px 500px at 85% -10%, rgba(212,20,42,.35), transparent 60%),
+      radial-gradient(700px 500px at -10% 30%, rgba(255,210,31,.12), transparent 60%),
+      var(--bg);
+    color:var(--cream); font-family:Inter,system-ui,sans-serif; line-height:1.5;
+    min-height:100vh;
+  }
+  .wrap{max-width:560px;margin:0 auto;padding:28px 16px 48px}
+  .brand{display:flex;justify-content:center;align-items:center;gap:10px;flex-wrap:wrap;
+    font-family:Inter,sans-serif;font-weight:700;text-transform:uppercase;letter-spacing:.14em;font-size:12px;color:var(--muted)}
+  .brand b{color:var(--yellow);font-weight:400}
+  .brand i{width:4px;height:4px;border-radius:50%;background:var(--red);display:inline-block}
+  h1{margin:14px 0 0;text-align:center;line-height:.9}
+  h1 .soft{display:block;font-family:"Lilita One",sans-serif;font-weight:400;font-size:clamp(64px,21vw,100px);color:var(--cream);transform:rotate(-3deg);line-height:1.05}
+  h1 .open{display:block;font-family:"Lilita One",sans-serif;font-weight:400;font-size:clamp(54px,17.5vw,84px);color:var(--yellow);transform:rotate(-2deg);line-height:1.1;margin-top:4px;
+    text-shadow:3px 3px 0 var(--red)}
+  .when{margin:22px auto 0;background:var(--cream);color:#1a0d09;border-radius:10px;padding:12px 16px;text-align:center;
+    box-shadow:0 6px 0 var(--red)}
+  .when .d{font-family:"Lilita One",sans-serif;font-size:clamp(22px,6.6vw,32px);line-height:1.2}
+  .when .d span{color:var(--red)}
+  .where{display:flex;justify-content:center;gap:18px;flex-wrap:wrap;margin-top:14px;font-size:14px;color:var(--muted);text-align:center}
+  .where strong{color:var(--cream);display:block;font-size:15px}
+  .deal{margin:22px 0 0;background:var(--yellow);color:#150a06;border-radius:12px;padding:14px 12px;text-align:center;
+    box-shadow:0 6px 0 var(--red)}
+  .deal .big{font-family:"Lilita One",sans-serif;font-size:clamp(28px,8.8vw,42px);line-height:1.15}
+  .deal .big em{font-style:normal;color:var(--red)}
+  .deal .sub{display:inline-block;margin-top:8px;background:var(--red);color:#fff;font-weight:700;font-size:13px;letter-spacing:.12em;
+    padding:4px 12px;border-radius:999px}
+  form,.thanks{margin-top:26px;background:var(--card);border:1px solid var(--line);border-radius:16px;padding:20px 18px}
+  form h2,.thanks h2{margin:0 0 6px;font-family:"Lilita One",sans-serif;font-weight:400;font-size:24px;color:var(--yellow)}
+  form p.lead{margin:0 0 16px;color:var(--muted);font-size:14px}
+  label{display:block;font-size:13px;font-weight:600;margin:14px 0 6px;color:var(--cream)}
+  label .opt{color:var(--muted);font-weight:400}
+  input[type=text],input[type=email],input[type=tel],select,textarea{
+    width:100%;background:#120b08;color:var(--cream);border:1px solid var(--line);border-radius:10px;
+    padding:13px 12px;font:inherit;font-size:16px;appearance:none;-webkit-appearance:none}
+  select{background-image:linear-gradient(45deg,transparent 50%,var(--muted) 50%),linear-gradient(135deg,var(--muted) 50%,transparent 50%);
+    background-position:calc(100% - 20px) 55%,calc(100% - 14px) 55%;background-size:6px 6px;background-repeat:no-repeat;padding-right:34px}
+  textarea{min-height:72px;resize:vertical}
+  input:focus,select:focus,textarea:focus{outline:2px solid var(--yellow);outline-offset:1px;border-color:transparent}
+  .check{display:flex;gap:10px;align-items:center;margin-top:16px;font-size:15px;font-weight:600;cursor:pointer}
+  .check input{width:22px;height:22px;accent-color:var(--scarlet);flex:none}
+  .hp{position:absolute;left:-9999px;height:0;overflow:hidden}
+  button{margin-top:22px;width:100%;border:0;border-radius:12px;padding:16px;cursor:pointer;
+    font-family:"Lilita One",sans-serif;font-size:19px;letter-spacing:.03em;color:#fff;background:var(--red);
+    box-shadow:0 5px 0 #7d0c19;transition:transform .08s}
+  button:active{transform:translateY(3px);box-shadow:0 2px 0 #7d0c19}
+  button[disabled]{opacity:.6;cursor:wait}
+  .err{display:none;margin-top:12px;color:#ff8a8a;font-size:14px}
+  .fine{margin-top:10px;text-align:center;font-size:12px;color:var(--muted)}
+  .thanks{display:none;text-align:center}
+  .thanks .emoji{font-size:42px}
+  .thanks p{color:var(--muted);margin:8px 0 0}
+  .perks{display:grid;grid-template-columns:repeat(2,1fr);gap:8px;margin-top:20px;font-size:13px;color:var(--muted);text-align:center}
+  .perks div{border:1px solid var(--line);border-radius:10px;padding:10px 6px}
+  footer{margin-top:26px;text-align:center;font-size:12px;color:#8d7b6a}
+</style>
+</head>
+<body>
+<main class="wrap">
+
+  <div class="brand"><span>Kati Roll <b>by Bombay Spice</b></span><i></i><span>Bombay <b>Bar</b></span><i></i><span>New Brunswick</span></div>
+
+  <h1><span class="soft">SOFT</span><span class="open">OPENING</span></h1>
+
+  <div class="when"><div class="d">Sunday, <span>Oct 11, 2026</span></div></div>
+  <div class="where">
+    <div><strong>12 Easton Ave</strong>New Brunswick, NJ 08901</div>
+    <div><strong>1:00 PM – 9:00 PM</strong>Doors open all day</div>
+  </div>
+
+  <div class="deal">
+    <div class="big">BUY 1 GET 1 <em>FREE</em></div>
+    <div class="sub">ON KATI ROLLS · ALL DAY</div>
+  </div>
+
+  <form id="rsvp" name="soft-opening-rsvp" method="POST" novalidate>
+    <input type="hidden" name="_subject" value="New RSVP: Bombay Bar Soft Opening">
+    <p class="hp"><label>Don't fill this out: <input name="_gotcha" tabindex="-1" autocomplete="off"></label></p>
+
+    <h2>Save Your Spot</h2>
+    <p class="lead">RSVP takes 30 seconds. We'll see you Sunday.</p>
+
+    <label for="name">Full name</label>
+    <input id="name" name="name" type="text" autocomplete="name" required placeholder="Your name">
+
+    <label for="phone">Phone</label>
+    <input id="phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" required placeholder="(555) 555-5555">
+
+    <label for="email">Email</label>
+    <input id="email" name="email" type="email" autocomplete="email" required placeholder="you@email.com">
+
+    <label for="party">Party size</label>
+    <select id="party" name="party_size" required>
+      <option value="1">Just me</option>
+      <option value="2" selected>2 people</option>
+      <option value="3">3 people</option>
+      <option value="4">4 people</option>
+      <option value="5">5 people</option>
+      <option value="6">6 people</option>
+      <option value="7+">7 or more</option>
+    </select>
+
+    <label class="check"><input type="checkbox" name="rutgers_student" value="yes"> I'm a Rutgers student</label>
+
+    <label for="notes">Anything we should know? <span class="opt">(optional)</span></label>
+    <textarea id="notes" name="notes" placeholder="Birthday, group booking, dietary needs..."></textarea>
+
+    <button type="submit" id="submit">RSVP Now</button>
+    <div class="err" id="err">Something went wrong. Please try again.</div>
+    <div class="fine">We'll only use your details for this event.</div>
+  </form>
+
+  <section class="thanks" id="thanks" aria-live="polite">
+    <div class="emoji">🎉</div>
+    <h2>You're on the list!</h2>
+    <p>See you Sunday, Oct 11 at 12 Easton Ave.<br>Bring friends. Buy 1 Get 1 Free on Kati Rolls all day.</p>
+  </section>
+
+  <div class="perks">
+    <div>🌯 Authentic Kati Rolls</div>
+    <div>🍸 Craft Cocktails</div>
+    <div>🎓 College-friendly spot</div>
+    <div>🎶 Good food, great vibes</div>
+  </div>
+
+  <footer>Bombay Bar · 12 Easton Ave, New Brunswick, NJ 08901</footer>
+</main>
+
+<script>
+(function(){
+  // Paste your Formspree endpoint here (https://formspree.io/f/xxxxxxxx). Submissions are emailed to the address on that form.
+  var FORM_ENDPOINT='https://formspree.io/f/YOUR_FORM_ID';
+  var form=document.getElementById('rsvp'),btn=document.getElementById('submit'),
+      err=document.getElementById('err'),thanks=document.getElementById('thanks');
+  form.addEventListener('submit',function(e){
+    e.preventDefault();
+    err.style.display='none';
+    if(!form.checkValidity()){form.reportValidity();return;}
+    btn.disabled=true;btn.textContent='SENDING...';
+    if(FORM_ENDPOINT.indexOf('YOUR_FORM_ID')!==-1){err.textContent='Form is not connected yet.';err.style.display='block';btn.disabled=false;btn.textContent='RSVP Now';return;}
+    fetch(FORM_ENDPOINT,{method:'POST',headers:{'Accept':'application/json'},body:new FormData(form)})
+      .then(function(r){
+        if(!r.ok)throw new Error('bad status');
+        form.style.display='none';thanks.style.display='block';
+        thanks.scrollIntoView({behavior:'smooth',block:'center'});
+      })
+      .catch(function(){
+        err.style.display='block';btn.disabled=false;btn.textContent='RSVP Now';
+      });
+  });
+})();
+</script>
+</body>
+</html>
